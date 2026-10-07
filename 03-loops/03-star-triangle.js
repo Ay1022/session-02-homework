@@ -12,3 +12,14 @@
 //   *****
 
 // your code here
+const rows = 5;
+let st=0;
+let line = "";
+const stars ="*";
+
+
+while(st < rows){
+    line += "*";
+    console.log(line)
+    st++;
+}
