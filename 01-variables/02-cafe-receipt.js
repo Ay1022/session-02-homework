@@ -12,3 +12,12 @@
 //   Total: 1650 baisa = 1.65 OMR
 
 // your code here
+const shawarma = 600;
+const karak = 150;
+const totalpriceSh = 2 * shawarma
+const totalpriceKa = 3 * karak
+const totalprice = totalpriceKa + totalpriceSh ;
+const totalOMR = totalprice / 1000;
+console.log(`Shawarma: 2 X ${shawarma} = ${totalpriceSh} baisa`)
+console.log(`Karak: 3 X ${karak} = ${totalpriceKa} baisa`)
+console.log(`Total : ${totalprice} baisa = ${totalOMR} OMR `)
