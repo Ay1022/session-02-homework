@@ -19,5 +19,23 @@ const order = [
   { name: "Karak", price: 150, quantity: 4 },
   { name: "Luqaimat", price: 1000, quantity: 1 },
 ];
-
+let subtotal = 0;
 // your code here
+for (let i =0; i< order.length; i++){
+  const linetotal = order[i].price * order[i].quantity;
+  console.log(`${order[i].name} x ${order[i].quantity} = ${linetotal} baisa`)
+
+  subtotal += linetotal;
+}
+
+let discount =0;
+
+if (subtotal >= 5000){
+  discount = subtotal * 0.10;
+
+}
+const total = subtotal - discount;
+
+console.log(`Subtotal: ${subtotal} baisa`);
+console.log(`Discount: ${discount} baisa`);
+console.log(`Total: ${total} baisa`);
